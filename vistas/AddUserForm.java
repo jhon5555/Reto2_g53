@@ -6,7 +6,7 @@
 package vistas;
 
 import Modelo.Conexion;
-import Modelo.TipoDocumentoEnum;
+import Modelo.EnumTipoDocumento;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -33,7 +33,7 @@ public class AddUserForm extends javax.swing.JDialog {
     
     public AddUserForm(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
-         modeloEnumTipoDocumento = new DefaultComboBoxModel(TipoDocumentoEnum.values());
+         modeloEnumTipoDocumento = new DefaultComboBoxModel(EnumTipoDocumento.values());
          
        
         initComponents();
